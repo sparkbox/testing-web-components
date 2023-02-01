@@ -2,12 +2,16 @@
   "name": "testing-web-components",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest -c jest.config.json",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest -c jest.config.json --watch",
     "start": "serve ."
   },
   "dependencies": {
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
     "serve": "^14.2.0"
   }
 }

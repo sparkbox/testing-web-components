@@ -10,24 +10,20 @@ class ClickCounter extends HTMLElement {
 
       <button up>click here to go up!</button>
       <button zero>click here to reset!</button>
-      <button down>click here to go down!</button> `;
+      <button down>click here to go down!</button>`;
 
     const upButton = this.querySelector("[up]");
     const downButton = this.querySelector("[down]");
     const zeroButton = this.querySelector("[zero]");
     const countDisplay = this.querySelector("span");
 
-    upButton.onclick = () => {
-      countDisplay.textContent = ++countDisplay.textContent;
-    };
+    upButton.onclick = () =>
+      (countDisplay.textContent = ++countDisplay.textContent);
 
-    zeroButton.onclick = () => {
-      countDisplay.textContent = 0;
-    };
+    zeroButton.onclick = () => (countDisplay.textContent = 0);
 
-    downButton.onclick = () => {
-      countDisplay.textContent = --countDisplay.textContent;
-    };
+    downButton.onclick = () =>
+      (countDisplay.textContent = --countDisplay.textContent);
   }
 }
 

@@ -1,0 +1,5 @@
+{
+  "testRegex": "(/__tests__/.*|(\\.|/)test)\\.mjs$",
+  "transform": {},
+  "testEnvironment": "jest-environment-jsdom"
+}
