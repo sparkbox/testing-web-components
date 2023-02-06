@@ -8,8 +8,8 @@ describe("ClickCounter", () => {
   beforeAll(() => {
     document.body.innerHTML = "<click-counter></click-counter>";
 
-    upButton = document.querySelector("[up]");
-    downButton = document.querySelector("[down]");
+    upButton = document.querySelector("[add]");
+    downButton = document.querySelector("[sub]");
     zeroButton = document.querySelector("[zero]");
     countDisplay = document.querySelector("span");
   });
@@ -18,20 +18,20 @@ describe("ClickCounter", () => {
     countDisplay.textContent = "0";
   });
 
-  test("when the up button is clicked, number goes up", () => {
+  test("when the add button is clicked, the displayed number goes up", () => {
     upButton.click();
 
     expect(countDisplay.textContent).toBe("1");
   });
 
-  test("when the reset button is clicked, number resets", () => {
+  test("when the reset button is clicked, the displayed number resets", () => {
     upButton.click();
     zeroButton.click();
 
     expect(countDisplay.textContent).toBe("0");
   });
 
-  test("when the down button is clicked, number goes down", () => {
+  test("when the subtract button is clicked, the displayed number goes down", () => {
     downButton.click();
 
     expect(countDisplay.textContent).toBe("-1");
