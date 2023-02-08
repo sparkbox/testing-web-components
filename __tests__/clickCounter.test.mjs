@@ -26,6 +26,9 @@ describe("ClickCounter", () => {
 
   test("when the reset button is clicked, the displayed number resets", () => {
     upButton.click();
+
+    expect(countDisplay.textContent).toBe("1");
+
     zeroButton.click();
 
     expect(countDisplay.textContent).toBe("0");
