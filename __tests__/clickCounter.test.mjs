@@ -8,9 +8,9 @@ describe("ClickCounter", () => {
   beforeAll(() => {
     document.body.innerHTML = "<click-counter></click-counter>";
 
-    upButton = document.querySelector("[add]");
-    downButton = document.querySelector("[sub]");
-    zeroButton = document.querySelector("[zero]");
+    upButton = document.querySelector(".add");
+    downButton = document.querySelector(".sub");
+    zeroButton = document.querySelector(".zero");
     countDisplay = document.querySelector("span");
   });
 

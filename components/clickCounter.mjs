@@ -8,13 +8,13 @@ class ClickCounter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = html`<div>current number: <span>0</span></div>
 
-      <button add>click here to go up!</button>
-      <button zero>click here to reset!</button>
-      <button sub>click here to go down!</button>`;
+      <button class="add">click here to go up!</button>
+      <button class="zero">click here to reset!</button>
+      <button class="sub">click here to go down!</button>`;
 
-    const upButton = this.querySelector("[add]");
-    const downButton = this.querySelector("[sub]");
-    const zeroButton = this.querySelector("[zero]");
+    const upButton = this.querySelector(".add");
+    const downButton = this.querySelector(".sub");
+    const zeroButton = this.querySelector(".zero");
     const countDisplay = this.querySelector("span");
 
     upButton.onclick = () => {
