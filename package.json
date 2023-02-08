@@ -3,9 +3,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest -c jest.config.json",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest -c jest.config.json --watch",
-    "start": "serve . -l 3000"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest -c jest.config.json",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest -c jest.config.json --watch",
+    "start": "serve ."
   },
   "dependencies": {
     "jest": "^29.4.1",
